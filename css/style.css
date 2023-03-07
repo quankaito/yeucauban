@@ -1,0 +1,57 @@
+body {
+    color: #ddd;
+    font: 32px/32px sans-serif;
+    text-align: center;
+    background: black;
+  }
+  div {
+    position: relative;
+    padding: 120px;
+    text-shadow: 0 0 3px #fff;
+  }
+  sub {
+    position: absolute;
+    line-height: 1px;
+    animation: zZ 2.5s infinite linear;
+  }
+  sup {
+    position: absolute;
+    line-height: 1px;
+    animation: zZz 4s infinite linear;
+  }
+  @keyframes zZ {
+    0% {
+      opacity: 0;
+      font-size: 1px;
+    }
+    50% {
+      opacity: 1;
+      font-size: 30px;
+      padding-left: 30px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 80px;
+      padding-left: 40px;
+    }
+  }
+  @keyframes zZz {
+    0% {
+      opacity: 0;
+      font-size: 1px;
+    }
+    50% {
+      opacity: 0;
+      font-size: 1px;
+    }
+    75% {
+      opacity: 1;
+      font-size: 30px;
+      padding-left: 20px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 80px;
+      padding-left: 40px;
+    }
+  }
